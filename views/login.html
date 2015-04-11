@@ -1,0 +1,39 @@
+<div class="center pad40top">
+<p style="text-align:center;"><img src="images/contraflow-white-logo.png"></p>
+</div>
+
+<div class="center pad20top" ng-show="validated">
+<p class="white">{{errorMessage}}</p>
+</div>
+	<!-- Actual Content -->
+<div class="center">
+<div class="row">
+<div class="col-xs-12 pad20">
+<form role="form" ng-submit="OnSubmit()">
+    <!--<fieldset ng-disabled="isClicked">-->
+    <div class="form-group">
+            <label class="sr-only" >Email address</label>
+			<input type="email" class="form-control" placeholder="Enter email" ng-model="userDetails.email"  ng-blur="EmailValidation()">
+			</div>
+				<div class="form-group">
+						<label class="sr-only" >Password</label>
+						<input type="password" class="form-control" placeholder="Password" ng-model="userDetails.password" ng-blur="PasswordValidation()">
+				</div>
+					<div class="form-group">
+					<button type="submit" class="btn btn-default">Login</button>	
+					</div>
+					<!--<div class="form-group checkbox white">-->
+						<!--<label>-->
+							<!--<input type="checkbox"> Remember me-->
+						<!--</label>-->
+					<!--</div>-->
+        <!--<fieldset>-->
+				</form>
+				<div>
+				    <a class="white btn btn-link" href="#/forgot">Forgot Password</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Actual Content -->	
+
